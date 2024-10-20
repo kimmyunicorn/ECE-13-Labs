@@ -1,1 +1,51 @@
+LAB 4 README
+Kimberly Camanero (kcamaner@ucsc.edu)
+
+Summary:This lab has two parts to it. Stacks and RPN. This lab was a good introduction to stacks and how a stack works. 
+I had no prior knowledge of stacks before this lab, but this lab did a really good job in introducing that topic to us. 
+Now I am aware of the Stack functions but most importantly the two main ones which are Stack Pop and Stack Push. 
+Me personally, I made an analogy with a Tower because I like to visualize things. And the different spaces are “floors” 
+which is why I used “floor” in my code. I named my stack sandwich because I just thought that the same was appropriate 
+because a bunch of items are stacked together in a sandwich. After that was done, with all the test cases as well it was 
+time to implement another main file, RPN and the RPN tests which stand for Reverse Polish Notation. This has a different 
+order of operations, instead of doing “2 + 2”, in RPN you do “2 2 +” This was where the actual calculator functions were made 
+such as “+, -, *, *” and this is where we had to return the 6 errors (rpn_error_stack_underflow, rpn_error_stack_overflow, 
+rpn_error_invalid_token, rpn_error_divide_by_zero, rpn_error_too_few_items_remain, rpn_error_too_many_items_remain) 
+Then in the rpn_test.c was where the calculations were tested as well as the errors. I definitely think stacks and rpn 
+were the important aspects of the lab, and just understanding the stack concept. Incorporating rpn with stacks I believe 
+was also a big factor of this lab.
+
+Approach: I started this lab the day it was released, and took me a while. I first started off with the stack functions considering 
+they were much less simpler and less of a problem than rpn. I studied stacks and how they work, so then I was able to implement the 
+functions in my stack.c file. I was a little bit confused for the tests but then I was told you can do whatever you want, as long as 
+I test all cases. So I first tested stack init and checked if it was initialized. Then the fun part began, so I pushed something to 
+the stack, I then got the size of the stack, and then I popped that item. Then i tried popping again but I cant so error, then i got 
+the size, then i pushed and then i tried pushing again but I filled the stack so now I get the stack is full error. I then popped, 
+got size, and tried to pop when it was empty. For RPN I did if else statements. I created a stack called sandwich. I then defined my 
+two numbers and names them number1_popped and number2_popped, because I have to pop them out the stack in order to use them for the 
+operation. I first check if I am working with a digit, if I am then it checks if the stack is full and if it is then it returns the 
+overflow error and if it is not full it pushes the digit into the stack. Then I use else if statements for my four operands that consist 
+of addition, subtraction, multiplication, and division. For the division I made an if else statement if the second number is a “0” then 
+the divide_by_error returns. Then i just tested for overflow and underflow is the items are greater or less than one. For my backspace 
+function i used an if else statement so if j>0 is true it ensures that there is a character to delete and if there is I used j- - so it 
+can delete. If there isn't then j+ + is there to increment the index to the next position. After the rpn.c file was very complicated for 
+me because it wouldn’t work, at first I tried the approach with cases and the switch function but when I saw how much more over complicated 
+I made things, I switched to else if statements. The rpn test was much easier, especially because we were given a template to follow, so I 
+appreciate that a lot. What went wrong is that for a while my results were just returning 0’s and turns out I wasn't ever pushing into my 
+stack to begin with so everything was 0. But it took me like  hours to find out I wasn't pushing anything in the stack. The setup of my code 
+was very complicated but became a lot more simpler when I switched my approach from switch to else if. If I were to do this lab again, I 
+would just start with else if right off the bat. 
+
+Final Section:I prayed to god, actually and IT WORKED!! JUST LOOK!!! :D 
+
+Like ughhhhhh toooooooo good, I had to screenshot. I started this lab the day after it was released and went to the lab every single day. 
+I worked around 2 hours of it a day (during lab) but today the last day I worked 12 hours on it, because I just kept getting weird errors. 
+I loved working on the test cases, because I have freedom to it if i wanna pop i can pop whenever i want or I can push, also rpn test cases 
+were pretty fun, the result of the first test case is 11, the second is 16, and third is 2004, which is my birthday and I think it’s fun to 
+do little personalizations like that! I disliked rpn.c when i was working with switch, other than that everything else was fun. I believe this 
+was a worthwhile lab, I feel like I know so much more now about C programming and more concepts too. I also like how this was basically 2 labs 
+in one and it’s preparing us to work with a lot more files. The manual was great and extremely helpful when it came to the functions and I really 
+appreciated the test case template that was provided to us. The grading seems pretty fair, and examples from class helped.
+
+
 
