@@ -1,1 +1,20 @@
+LAB 9 READ ME
+
+CruzID: kcamaner@ucsc.edu
+
+I WROTE: 
+Agent.C
+AgentTest.C
+Message.C
+MessageTest.C
+
+This lab was the hardest lab, I didn't know if it was a good idea to work solo, or with a partner, but I decided that it would be less 
+of a stress to do it solo. I like how the work was distributed for the individual student, so despite working solo or not it was the 
+same workload. It was very difficult working with c programming and python and all the new concepts we had to learn. But I appreciate how 
+we were given the diagrams for the state machines, it was extremely helpful. And I am very glad we got these resources.
+
+A TA told me to start with message.C because message was the easiest files out of the four to make, they also said to do message first because 
+agent works with message, or needs message to run.So I started with message.c, did message tests and then agent.c and agent test. 
+
+Most of my test cases passed, so in total this lab was a success. But it was extremely hard and I am so glad that we got the extension. 
 
